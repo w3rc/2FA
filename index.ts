@@ -8,7 +8,7 @@ import { Config } from 'node-json-db/dist/lib/JsonDBConfig';
 const app = express();
 app.use(express.json());
 
-const db = new JsonDB(new Config('2fa_db', true, false, '/'));
+const db = new JsonDB(new Config('data/2fa_db', true, false, '/'));
 
 app.get('/api', (_, res: Response) => {
 	res.json('Hello from 2fa');
