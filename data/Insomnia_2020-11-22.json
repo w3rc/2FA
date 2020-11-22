@@ -1,0 +1,117 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-11-22T15:09:27.667Z",
+    "__export_source": "insomnia.desktop.app:v2020.4.2",
+    "resources": [
+        {
+            "_id": "req_ac55cf5632304f4b83003a8942364198",
+            "parentId": "fld_813e3e3aa2334a38841db68d4945caee",
+            "modified": 1606057484214,
+            "created": 1606057232873,
+            "url": "localhost:6060/api/verify",
+            "name": "Validate 2FA",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"uid\": \"9011fbbd-2fbc-4cc3-9500-5f63a659b898\",\n\t\"token\": \"985011\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_c9238d99d2144f21a4bd757eb41e771c"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1606057232873,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": false,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_813e3e3aa2334a38841db68d4945caee",
+            "parentId": "wrk_78d00fc0d6244064acf84050fc813822",
+            "modified": 1606056978100,
+            "created": 1606056978100,
+            "name": "2FA",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1606056978100,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_78d00fc0d6244064acf84050fc813822",
+            "parentId": null,
+            "modified": 1598414895094,
+            "created": 1598414895094,
+            "name": "Insomnia",
+            "description": "",
+            "scope": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_eb71f522da69463d9d8e44c6a2a93d80",
+            "parentId": "fld_813e3e3aa2334a38841db68d4945caee",
+            "modified": 1606057100130,
+            "created": 1606056987386,
+            "url": "localhost:6060/api/register",
+            "name": "Register",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1606056987386,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_d4c1380c3ca54d1eaae026e4064f2d55283e0c84",
+            "parentId": "wrk_78d00fc0d6244064acf84050fc813822",
+            "modified": 1598414895166,
+            "created": 1598414895166,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1598414895166,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_d4c1380c3ca54d1eaae026e4064f2d55283e0c84",
+            "parentId": "wrk_78d00fc0d6244064acf84050fc813822",
+            "modified": 1598414895170,
+            "created": 1598414895170,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_7177cc1beb1149f390bd7f15b34ca8a4",
+            "parentId": "wrk_78d00fc0d6244064acf84050fc813822",
+            "modified": 1598414895098,
+            "created": 1598414895098,
+            "fileName": "Insomnia",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
